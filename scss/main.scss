@@ -1,0 +1,173 @@
+$primaryColor : #3961C2;
+$secondaryColor : #92B5FA;
+$textColor : #0B0754;
+$successColor : green;
+$dangerColor : #ED6966;
+$whiteColor : #FFFFFF;
+body{
+    background-color: $whiteColor;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.custom-nav{
+    margin-top: 2em;
+    .navbar-brand{
+        img{
+            height: 50px;
+        }
+    }
+    #navbarNav{
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    color: $primaryColor;
+                    font-weight: 500;
+                    margin-left: 2.2em;
+                    &:hover{
+                        color: lighten($primaryColor, $amount: 20%);
+                    }
+                }
+                .btn-login{
+                    color: $secondaryColor;
+                    background-color: transparent;
+                    border-radius: 2em;
+                    border: 1px solid $secondaryColor;
+                    padding: 0.5em 1.7em;
+                    transition: 0.5s ease;
+
+                    &:hover{
+                        background-color: $secondaryColor;
+                        border: 1px solid transparent;
+                        color: $whiteColor;
+                    }
+                }
+                .btn-sign-up{
+                    color: $whiteColor;
+                    background-color: $secondaryColor;
+                    border-radius: 2em;
+                    border: 1px solid transparent;
+                    padding: 0.5em 1.7em;
+                    transition: 0.5s ease;
+
+                    &:hover{
+                        background-color: transparent;
+                        border: 1px solid $secondaryColor;
+                        color: $secondaryColor;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 992px){
+        margin-top: 0;
+        .navbar-brand{
+            img{
+                height: 30px;
+            }
+        }
+        #navbarNav{
+            .navbar-nav{
+                .nav-item{
+                    .nav-link{
+                        margin-left: 0;
+                    }
+                    .btn-login, .btn-sign-up{
+                        margin-top: 0.5em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.custom-section{
+    margin-top: 8em;
+    .custom-column{
+        h2{
+            color: $primaryColor;
+            font-weight: 600;
+            font-size: 3.5rem;
+        }
+        h3{
+            color: $secondaryColor;
+            font-weight: 400;
+            font-size: 2.5em;
+            line-height: 1;
+        }
+        p{
+            color: $textColor;
+            font-size: 1.1em;
+            margin-top: 2em;
+        }
+        .btn-section{
+            margin-top: 2.5em;
+            color: $whiteColor;
+            background-color: $dangerColor;
+            border-radius: 2em;
+            border: 1px solid transparent;
+            padding: 0.5em 1.7em;
+            transition: 0.5s ease;
+    
+            &:hover{
+                background-color: transparent;
+                border: 1px solid $dangerColor;
+                color: $dangerColor;
+            }
+        }
+        .img-illustration{
+            max-width: 100%;
+            height: auto;
+        }   
+    }
+    @media screen and (max-width: 992px){
+        margin-top: 2em;
+        .custom-column{
+            h2{
+                font-size: 2.5em;
+            }
+            h3{
+                font-size: 1.5em;
+            }
+            p{
+                font-size: 1em;
+            }
+            .img-illustration{
+                // display: none;
+                margin-top: 4em;
+                margin-bottom: 4em;
+            }
+            .btn-section{
+                margin-top: 1.5em;
+            }
+        }
+    }
+}
+
+footer{
+    clear: both;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	padding: 0em 3em;
+	width: 100%;
+    p{
+        color: $primaryColor;
+        font-weight: 400;
+        font-size: 1em;
+    }
+    a{
+        color: $primaryColor;
+        font-weight: 500;
+        font-style: bold;
+        transition: 2s ease-in;
+
+        &:hover{
+            color: darken($secondaryColor, $amount: 40%);
+            text-decoration: none;
+        }
+    }
+    @media screen and (max-width: 992px){
+        margin-top: 1em;
+        position: relative;
+    }
+}

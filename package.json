@@ -1,0 +1,14 @@
+{
+  "name": "landing-page-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass scss/main.scss css/style.css -w"
+  },
+  "author": "khaizulfa",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
