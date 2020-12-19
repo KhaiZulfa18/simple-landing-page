@@ -44,22 +44,22 @@ body {
       .custom-nav #navbarNav .navbar-nav .nav-item .btn-login, .custom-nav #navbarNav .navbar-nav .nav-item .btn-sign-up {
         margin-top: 0.5em; } }
 
-.custom-section {
+.custom-section-1 {
   margin-top: 8em; }
-  .custom-section .custom-column h2 {
+  .custom-section-1 .custom-column h2 {
     color: #3961C2;
     font-weight: 600;
     font-size: 3.5rem; }
-  .custom-section .custom-column h3 {
+  .custom-section-1 .custom-column h3 {
     color: #92B5FA;
     font-weight: 400;
     font-size: 2.5em;
     line-height: 1; }
-  .custom-section .custom-column p {
+  .custom-section-1 .custom-column p {
     color: #0B0754;
     font-size: 1.1em;
     margin-top: 2em; }
-  .custom-section .custom-column .btn-section {
+  .custom-section-1 .custom-column .btn-section {
     margin-top: 2.5em;
     color: #FFFFFF;
     background-color: #ED6966;
@@ -67,27 +67,126 @@ body {
     border: 1px solid transparent;
     padding: 0.5em 1.7em;
     transition: 0.5s ease; }
-    .custom-section .custom-column .btn-section:hover {
+    .custom-section-1 .custom-column .btn-section:hover {
       background-color: transparent;
       border: 1px solid #ED6966;
       color: #ED6966; }
-  .custom-section .custom-column .img-illustration {
+  .custom-section-1 .custom-column .img-illustration {
     max-width: 100%;
     height: auto; }
   @media screen and (max-width: 992px) {
-    .custom-section {
+    .custom-section-1 {
       margin-top: 2em; }
-      .custom-section .custom-column h2 {
+      .custom-section-1 .custom-column h2 {
         font-size: 2.5em; }
-      .custom-section .custom-column h3 {
+      .custom-section-1 .custom-column h3 {
         font-size: 1.5em; }
-      .custom-section .custom-column p {
+      .custom-section-1 .custom-column p {
         font-size: 1em; }
-      .custom-section .custom-column .img-illustration {
+      .custom-section-1 .custom-column .img-illustration {
         margin-top: 4em;
         margin-bottom: 4em; }
-      .custom-section .custom-column .btn-section {
+      .custom-section-1 .custom-column .btn-section {
         margin-top: 1.5em; } }
+
+.custom-section-2 {
+  padding: 8em 0; }
+  .custom-section-2 .title-label {
+    color: #3961C2;
+    font-size: 0.8em;
+    font-weight: 500;
+    background-color: #E4DFFE;
+    border-radius: 0.5em;
+    border: 1px solid transparent;
+    padding: 0.5em 1.7em;
+    transition: 0.5s ease; }
+  .custom-section-2 .title {
+    margin-top: 0.1em;
+    color: #3961C2;
+    font-size: 2.4em;
+    font-weight: 700;
+    line-height: 1; }
+  .custom-section-2 .sub-title {
+    margin-top: 0.9em;
+    color: #0B0754; }
+  .custom-section-2 .card-custom {
+    margin-top: 2em;
+    border: 2px solid #E4DFFE;
+    border-radius: 0.7em;
+    transition: box-shadow .3s; }
+    .custom-section-2 .card-custom .card-body .card-icon {
+      background-color: #fdefef;
+      border-radius: 0.3em;
+      width: 2.5em;
+      text-align: center; }
+      .custom-section-2 .card-custom .card-body .card-icon i {
+        font-size: 1em;
+        padding: 0.6em;
+        color: #ED6966; }
+    .custom-section-2 .card-custom .card-body .card-title {
+      margin-top: 1em;
+      color: #3961C2;
+      font-size: 1.6em;
+      font-weight: 700;
+      line-height: 1; }
+    .custom-section-2 .card-custom .card-body .card-text {
+      margin-top: 1em;
+      color: #0B0754; }
+    .custom-section-2 .card-custom .card-body .card-button {
+      color: #3961C2;
+      font-size: 1em;
+      font-weight: 600;
+      border: 1px solid transparent;
+      border-radius: 0.5em;
+      padding: 0.5em 1em;
+      background: linear-gradient(to right, #92B5FA, #92B5FA 50%, #3961C2 50%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% 100%;
+      background-position: 100%;
+      transition: background-position 1s ease;
+      text-decoration: none; }
+      .custom-section-2 .card-custom .card-body .card-button:hover {
+        background-position: 0 100%; }
+    .custom-section-2 .card-custom:hover {
+      box-shadow: 0 3em 2.5em #E4DFFE; }
+    @media screen and (max-width: 576px) {
+      .custom-section-2 .card-custom {
+        box-shadow: 0 0 1em #E4DFFE; } }
+  @media screen and (max-width: 576px) {
+    .custom-section-2 {
+      padding: 3em 0; }
+      .custom-section-2 .side-content {
+        display: none; } }
+
+.btn-primary {
+  color: #92B5FA;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: transparent;
+  border-radius: 0.5em;
+  border: 2px solid #92B5FA;
+  padding: 0.5em 1.7em;
+  transition: 0.5s ease; }
+  .btn-primary:hover {
+    color: white;
+    background-color: #92B5FA;
+    border-color: transparent; }
+
+.btn-danger {
+  color: #FFFFFF;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #ED6966;
+  border-radius: 0.5em;
+  border: 1px solid transparent;
+  padding: 0.5em 1.7em;
+  transition: 0.5s ease; }
+  .btn-danger:hover {
+    color: #ED6966;
+    background-color: transparent;
+    border-color: #ED6966; }
 
 footer {
   clear: both;

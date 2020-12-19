@@ -1,9 +1,10 @@
 $primaryColor : #3961C2;
 $secondaryColor : #92B5FA;
 $textColor : #0B0754;
-$successColor : green;
+$successColor : #32e0c4;
 $dangerColor : #ED6966;
 $whiteColor : #FFFFFF;
+$greyColor : #E4DFFE;
 body{
     background-color: $whiteColor;
     font-family: 'Montserrat', sans-serif;
@@ -80,7 +81,7 @@ body{
     }
 }
 
-.custom-section{
+.custom-section-1{
     margin-top: 8em;
     .custom-column{
         h2{
@@ -140,6 +141,125 @@ body{
                 margin-top: 1.5em;
             }
         }
+    }
+}
+
+.custom-section-2{
+    padding: 8em 0;
+    .title-label{
+        color: $primaryColor;
+        font-size: 0.8em;
+        font-weight: 500;
+        background-color: $greyColor;
+        border-radius: 0.5em;
+        border: 1px solid transparent;
+        padding: 0.5em 1.7em;
+        transition: 0.5s ease;
+    }
+    .title{
+        margin-top: 0.1em;
+        color: $primaryColor; 
+        font-size: 2.4em;
+        font-weight: 700;
+        line-height: 1;
+    }
+    .sub-title{
+        margin-top: 0.9em;
+        color: $textColor;
+    }
+    .card-custom{
+        margin-top: 2em;
+        border: 2px solid $greyColor;
+        border-radius: 0.7em;
+        transition: box-shadow .3s;
+        .card-body{
+            .card-icon{
+                background-color: lighten($dangerColor, $amount: 30%);
+                border-radius: 0.3em;
+                width: 2.5em;
+                text-align: center;
+                i{
+                    font-size: 1em;
+                    padding: 0.6em;
+                    color: $dangerColor;
+                }
+            }
+            .card-title{
+                margin-top: 1em;
+                color: $primaryColor; 
+                font-size: 1.6em;
+                font-weight: 700;
+                line-height: 1;
+            }
+            .card-text{
+                margin-top: 1em;
+                color: $textColor;
+            }
+            .card-button{
+                color: $primaryColor;
+                font-size: 1em;
+                font-weight: 600;
+                // background-color: transparent;
+                border: 1px solid transparent;
+                border-radius: 0.5em;
+                padding: 0.5em 1em;
+                background: linear-gradient(to right, $secondaryColor, $secondaryColor 50%, $primaryColor 50%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-size: 200% 100%;
+                background-position: 100%;
+                transition: background-position 1s ease;
+                text-decoration: none; // text decorations are clipped in WebKit browsers
+                &:hover {
+                    background-position: 0 100%;
+                }
+            }
+        }
+        &:hover{
+            box-shadow: 0 3em 2.5em $greyColor;
+        }
+        @media screen and (max-width: 576px) {
+            box-shadow: 0 0 1em $greyColor;
+        }
+    }
+    @media screen and (max-width: 576px) {
+        padding: 3em 0;
+        .side-content{
+            display: none;
+        }   
+    }
+}
+
+.btn-primary{
+    color: $secondaryColor;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: transparent;
+    border-radius: 0.5em;
+    border: 2px solid $secondaryColor;
+    padding: 0.5em 1.7em;
+    transition: 0.5s ease;
+    &:hover{
+        color: lighten($secondaryColor, $amount: 30%);
+        background-color: $secondaryColor;
+        border-color: transparent;
+    }
+}
+
+.btn-danger{
+    color: $whiteColor;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: $dangerColor;
+    border-radius: 0.5em;
+    border: 1px solid transparent;
+    padding: 0.5em 1.7em;
+    transition: 0.5s ease;
+    &:hover{
+        color: $dangerColor;
+        background-color: transparent;
+        border-color: $dangerColor;
     }
 }
 
